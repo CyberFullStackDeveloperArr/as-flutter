@@ -35,7 +35,7 @@ https://developer.android.com/studio?hl=id
 <p>from the zip, make it a folder named cmdline-tools once done, the folder should be positioned as shown below</p>
 
 ```
-C:\Users\(KAMU)\AppData\Local\Android\Sdk\cmdline-tools
+C:\Users\(YOU)\AppData\Local\Android\Sdk\cmdline-tools
 ```
 run in cmd
 
