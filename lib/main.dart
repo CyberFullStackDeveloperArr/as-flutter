@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'flutter_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double sliderValue = 50; //slider #
-    final TextEditingController alamatC = TextEditingController(); // input
+    final TextEditingController alamatC = TextEditingController(); // input #
     return MaterialApp(
       home: Scaffold(
         body: Padding(
@@ -118,6 +119,21 @@ class MyApp extends StatelessWidget {
                     // border: UnderlineInputBorder(),
                     border: InputBorder.none,
                   ),
+                ),
+                Builder(
+                  builder: (context) {
+                    return ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const FlutterAnimationPage()),
+                        );
+                      },
+                      child: const Text("Go To Animation Page"),
+                    );
+                  },
                 ),
               ],
             ),
