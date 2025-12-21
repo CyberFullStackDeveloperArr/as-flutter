@@ -58,3 +58,9 @@ flutter run
 ```
 # If you succeed smile, if there's an error that's a challenge🥰.
 # Keep it up, fellow programmers!
+
+# API🔥
+
+```
+https://jsonplaceholder.typicode.com
+```

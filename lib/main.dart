@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'flutter_animation.dart';
+import 'flutter_chart.dart';
+import 'flutter_api.dart';
 
 void main() {
   runApp(const MyApp());
@@ -132,6 +134,36 @@ class MyApp extends StatelessWidget {
                         );
                       },
                       child: const Text("Go To Animation Page"),
+                    );
+                  },
+                ),
+                const SizedBox(height: 20),
+                Builder(
+                  builder: (context) {
+                    return ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const FlutterChartPage()),
+                        );
+                      },
+                      child: const Text("Go To Chart Page"),
+                    );
+                  },
+                ),
+                const SizedBox(height: 20),
+                Builder(
+                  builder: (context) {
+                    return ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const FlutterApiPage()),
+                        );
+                      },
+                      child: const Text("Go To Api Page"),
                     );
                   },
                 ),
